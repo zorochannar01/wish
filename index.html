@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Journey — Abdullah ❤️ Ghazala</title>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, doc, getDoc, setDoc, collection, getDocs, addDoc, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+const fc = {
+  apiKey:"AIzaSyBI_sjxmM3sr1Fts5hPh8m6BVKTi-qcG3I",
+  authDomain:"aniversary-27457.firebaseapp.com",
+  projectId:"aniversary-27457",
+  storageBucket:"aniversary-27457.firebasestorage.app",
+  messagingSenderId:"16881387510",
+  appId:"1:16881387510:web:93e0189ba798ede86229d7"
+};
+const app = initializeApp(fc);
+const db = getFirestore(app);
+const storage = getStorage(app);
+window._fb = {db,storage,doc,getDoc,setDoc,collection,getDocs,addDoc,deleteDoc,updateDoc,ref,uploadBytes,getDownloadURL,deleteObject};
+window.dispatchEvent(new Event('fb-ready'));
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:#0d0015;color:white;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:linear-gradient(#FF5E9A,#D291FF);border-radius:4px}
+::-webkit-scrollbar-track{background:rgba(0,0,0,0.3)}
+@keyframes floatUp{0%{transform:translateY(105vh) rotate(0deg);opacity:0}8%{opacity:.55}88%{opacity:.3}100%{transform:translateY(-80px) rotate(540deg);opacity:0}}
+@keyframes twinkle{0%,100%{opacity:.05;transform:scale(1)}50%{opacity:.65;transform:scale(1.9)}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.4)}30%{transform:scale(1)}45%{transform:scale(1.22)}60%{transform:scale(1)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-11px)}40%,80%{transform:translateX(11px)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 30px rgba(255,94,154,0.25)}50%{box-shadow:0 0 60px rgba(255,94,154,0.6)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes aurora{0%,100%{opacity:.35;transform:scale(1) rotate(0deg)}50%{opacity:.65;transform:scale(1.12) rotate(180deg)}}
+@keyframes petalFall{0%{transform:translateY(-20px) rotate(0deg);opacity:0}8%{opacity:.7}90%{opacity:.35}100%{transform:translateY(102vh) rotate(400deg);opacity:0}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes vaultOpen{0%{transform:scale(0.8) rotateY(-30deg);opacity:0}100%{transform:scale(1) rotateY(0deg);opacity:1}}
+.hidden{display:none!important}
+.fade-in{animation:fadeIn .7s ease forwards}
+#bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);animation:aurora 9s ease-in-out infinite}
+.b1{width:900px;height:900px;background:radial-gradient(circle,rgba(255,20,147,0.28) 0%,transparent 70%);top:-250px;left:-250px}
+.b2{width:750px;height:750px;background:radial-gradient(circle,rgba(210,145,255,0.25) 0%,transparent 70%);top:15%;right:-180px;animation-delay:-3.5s}
+.b3{width:650px;height:650px;background:radial-gradient(circle,rgba(255,105,180,0.2) 0%,transparent 70%);bottom:-120px;left:25%;animation-delay:-6s}
+.b4{width:500px;height:500px;background:radial-gradient(circle,rgba(148,0,211,0.18) 0%,transparent 70%);top:55%;left:-100px;animation-delay:-2s}
+.b5{width:450px;height:450px;background:radial-gradient(circle,rgba(255,182,193,0.18) 0%,transparent 70%);bottom:15%;right:5%;animation-delay:-5s}
+#particles-layer,#hearts-layer,#petals-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.glass{background:rgba(255,255,255,0.07);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,0.13);border-radius:22px}
+.glass-pink{background:rgba(255,94,154,0.1);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,94,154,0.22);border-radius:22px}
+.glass-gold{background:rgba(255,215,0,0.07);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,215,0,0.22);border-radius:22px}
+.btn-p{background:linear-gradient(135deg,#FF5E9A,#D291FF,#FF5E9A);background-size:200%;border:none;color:white;font-weight:700;border-radius:14px;cursor:pointer;font-family:inherit;transition:all .3s;letter-spacing:.03em}
+.btn-p:hover{background-position:right;transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,94,154,0.45)}
+.btn-g{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.8);border-radius:12px;cursor:pointer;font-family:inherit;transition:all .2s}
+.btn-g:hover{background:rgba(255,255,255,0.13);color:white}
+.btn-g:disabled{opacity:.3;cursor:default}
+.btn-del{background:rgba(255,60,60,0.13);border:1px solid rgba(255,60,60,0.28);color:rgba(255,150,150,0.9);border-radius:10px;cursor:pointer;font-family:inherit;padding:6px 13px;font-size:.75rem;transition:all .2s}
+.btn-del:hover{background:rgba(255,60,60,0.22)}
+.ef{position:relative;cursor:default}
+.admin-mode .ef{cursor:pointer}
+.admin-mode .ef:hover{outline:2px dashed rgba(255,215,0,0.5);outline-offset:3px;border-radius:6px}
+.ei{display:none;position:absolute;top:-9px;right:-9px;width:22px;height:22px;background:linear-gradient(135deg,#FFD700,#FF5E9A);border-radius:50%;font-size:10px;align-items:center;justify-content:center;z-index:20;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,0.4)}
+.admin-mode .ef:hover .ei{display:flex}
+#emodal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(14px);background:rgba(0,0,0,0.65)}
+#emodal-box{width:100%;max-width:560px;padding:2rem;animation:fadeIn .3s ease}
+.minput{width:100%;padding:13px 16px;border-radius:12px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;font-size:.96rem;outline:none;font-family:inherit;resize:vertical;box-sizing:border-box;transition:border .2s}
+.minput:focus{border-color:rgba(255,94,154,0.55)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(13,0,21,0.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,94,154,0.18)}
+#nav-inner{padding:.85rem 1.5rem;display:flex;justify-content:space-between;align-items:center;max-width:1300px;margin:0 auto;flex-wrap:wrap;gap:.5rem}
+#nav-logo{font-family:Georgia,serif;font-size:1rem;font-weight:700;white-space:nowrap;flex-shrink:0;background:linear-gradient(135deg,#FF9DC8,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+#nav-links{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.nb{padding:6px 11px;border-radius:9px;border:none;background:transparent;color:rgba(255,255,255,0.5);cursor:pointer;font-size:.72rem;font-weight:500;transition:all .2s;white-space:nowrap;font-family:inherit}
+.nb:hover{color:rgba(255,255,255,0.9);background:rgba(255,255,255,0.07)}
+.nb.active{background:linear-gradient(135deg,rgba(255,94,154,0.22),rgba(210,145,255,0.18));color:#FF9DC8;font-weight:700;border:1px solid rgba(255,94,154,0.2)}
+#apill{padding:5px 13px;border-radius:20px;background:linear-gradient(135deg,rgba(255,215,0,0.18),rgba(255,165,0,0.12));border:1px solid rgba(255,215,0,0.3);color:#FFD700;font-size:.7rem;font-weight:700;letter-spacing:.06em}
+.section{position:relative;z-index:1;animation:fadeIn .6s ease}
+.sw{max-width:840px;margin:0 auto;padding:6rem 1.5rem 4rem}
+.sww{max-width:1020px;margin:0 auto;padding:6rem 1.5rem 4rem}
+.sh{text-align:center;margin-bottom:3rem}
+.se{font-size:3rem;margin-bottom:1rem;display:inline-block;animation:bounce 2.2s ease-in-out infinite}
+.st{font-size:2rem;font-weight:700;font-family:Georgia,serif;text-align:center;margin-bottom:.5rem;background:linear-gradient(135deg,#FF9DC8,#D291FF,#89CFF0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ss{color:rgba(255,255,255,0.4);text-align:center;font-size:.9rem;margin-bottom:.75rem}
+.dv{width:80px;height:3px;background:linear-gradient(90deg,#FF5E9A,#D291FF,#89CFF0);margin:.75rem auto 2.5rem;border-radius:2px}
+#ls{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;position:relative;z-index:10}
+.pwinput{width:100%;padding:16px 20px;border-radius:16px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;font-size:1.1rem;outline:none;letter-spacing:.32em;text-align:center;box-sizing:border-box;margin-bottom:1rem;font-family:inherit;transition:border .2s}
+.pwinput:focus{border-color:rgba(255,94,154,0.5);background:rgba(255,255,255,0.13)}
+.hintbox{margin-top:1rem;padding:1.2rem;background:linear-gradient(135deg,rgba(255,94,154,0.1),rgba(210,145,255,0.07));border-radius:16px;border:1px solid rgba(255,94,154,0.22);animation:fadeIn .3s ease}
+#hwrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem 5rem;text-align:center;position:relative}
+.htitle{font-size:clamp(2rem,5.5vw,3.9rem);font-weight:800;color:white;line-height:1.14;margin-bottom:1.5rem;font-family:Georgia,serif;letter-spacing:-.5px}
+.hgrad{background:linear-gradient(135deg,#FF5E9A,#FFB6C1,#D291FF,#89CFF0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:300%;animation:shimmer 4s linear infinite}
+.hnames{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:3rem;font-family:Georgia,serif}
+.hname{color:white;font-weight:800;font-size:1.8rem;text-shadow:0 0 35px rgba(255,94,154,0.5)}
+.hheart{font-size:3rem;animation:heartbeat 1.8s ease-in-out infinite;display:inline-block;filter:drop-shadow(0 0 18px rgba(255,94,154,0.9))}
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;max-width:520px;margin:0 auto 3rem}
+.sc{padding:1.5rem;text-align:center;background:linear-gradient(135deg,rgba(255,94,154,0.12),rgba(210,145,255,0.07));border:1px solid rgba(255,94,154,0.2)}
+.sv{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:5px}
+.sl{font-size:.71rem;color:rgba(255,255,255,0.45);letter-spacing:.12em;text-transform:uppercase}
+.ebadge{padding:1.2rem 2rem;display:inline-block;margin-bottom:3rem;animation:glowPulse 3s ease-in-out infinite;background:linear-gradient(135deg,rgba(255,94,154,0.14),rgba(210,145,255,0.1))}
+.lpara{margin-bottom:2.25rem;padding-bottom:2.25rem;border-bottom:1px solid rgba(255,94,154,0.1)}
+.lpara:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.lopener{font-family:Georgia,serif;font-style:italic;font-size:1.12rem;margin-bottom:.68rem;background:linear-gradient(135deg,#FF9DC8,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lbody{color:rgba(255,255,255,0.82);line-height:1.92;font-size:.97rem}
+.tlwrap{position:relative}
+.tlline{position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,#FF5E9A,#D291FF,#89CFF0,transparent);transform:translateX(-50%);opacity:.25;border-radius:2px}
+.tlrow{display:flex;margin-bottom:2.25rem;position:relative}
+.tlrow.left{justify-content:flex-start}
+.tlrow.right{justify-content:flex-end}
+.tldot{position:absolute;left:50%;top:1.9rem;width:17px;height:17px;border-radius:50%;transform:translateX(-50%);border:4px solid #0d0015;z-index:5}
+.tlcard{width:44%;cursor:pointer;transition:all .3s;padding:1.4rem}
+.tlcard:hover{transform:translateY(-3px)}
+.tldate{font-size:.69rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.38rem}
+.tltitle{color:white;font-family:Georgia,serif;font-size:1.02rem;font-weight:700;margin-bottom:.45rem}
+.tlhint{color:rgba(255,255,255,0.24);font-size:.78rem}
+.tldesc{color:rgba(255,255,255,0.75);font-size:.88rem;line-height:1.77;animation:fadeIn .3s ease}
+.tl-photos{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.75rem}
+.tl-photo{width:60px;height:60px;object-fit:cover;border-radius:10px;cursor:pointer;border:2px solid rgba(255,94,154,0.3);transition:transform .2s}
+.tl-photo:hover{transform:scale(1.08)}
+.rcard{padding:1.18rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;background:linear-gradient(135deg,rgba(255,94,154,0.07),rgba(210,145,255,0.04));transition:transform .2s}
+.rcard:hover{transform:translateX(4px)}
+.rnum{min-width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.79rem;font-weight:800;color:white;flex-shrink:0}
+.rtext{color:rgba(255,255,255,0.85);line-height:1.72;font-size:.94rem;margin:0}
+.pdot{height:8px;border-radius:4px;cursor:pointer;transition:all .3s;background:rgba(255,255,255,0.15)}
+.pdot.active{background:linear-gradient(90deg,#FF5E9A,#D291FF)}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1.2rem}
+.wcard{padding:1.8rem;text-align:center;border:1px solid rgba(255,94,154,0.14);background:linear-gradient(135deg,rgba(255,94,154,0.08),rgba(210,145,255,0.05));transition:transform .3s,border .3s}
+.wcard:hover{transform:translateY(-5px);border-color:rgba(255,94,154,0.32)}
+.wqm{font-size:1.3rem;color:rgba(255,94,154,0.5)}
+.wtext{color:rgba(255,255,255,0.9);font-family:Georgia,serif;font-style:italic;font-size:.97rem;line-height:1.68;margin:.5rem 0}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1.4rem}
+.dcard{text-align:center;padding:2.3rem 1.8rem;border:1px solid rgba(255,94,154,0.12);background:linear-gradient(135deg,rgba(255,94,154,0.07),rgba(210,145,255,0.04));transition:transform .3s,border .3s}
+.dcard:hover{transform:translateY(-6px);border-color:rgba(210,145,255,0.38)}
+.dicon{font-size:3.2rem;margin-bottom:1.1rem;display:inline-block;animation:bounce 2.2s ease-in-out infinite}
+.dtitle{color:white;font-family:Georgia,serif;margin-bottom:.85rem;font-size:1.08rem;font-weight:700}
+.ddesc{color:rgba(255,255,255,0.65);font-size:.9rem;line-height:1.8}
+/* VAULT GALLERY */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.1rem;margin-top:1.5rem}
+.vphoto-card{border-radius:16px;overflow:hidden;border:1px solid rgba(255,215,0,0.2);background:rgba(255,215,0,0.04);transition:transform .3s,border .3s}
+.vphoto-card:hover{transform:translateY(-4px);border-color:rgba(255,215,0,0.4)}
+.vphoto-card img{width:100%;aspect-ratio:1;object-fit:cover;cursor:pointer;display:block}
+.vphoto-caption{padding:.6rem .8rem;color:rgba(255,255,255,0.65);font-size:.78rem;font-style:italic;text-align:center}
+.ncard{padding:1.4rem;margin-bottom:1rem;border:1px solid rgba(255,94,154,0.14);background:linear-gradient(135deg,rgba(255,94,154,0.07),rgba(210,145,255,0.04))}
+.nauthor{color:#FF9DC8;font-weight:700;font-size:.9rem}
+.ndate{color:rgba(255,255,255,0.22);font-size:.73rem}
+.ntext{color:rgba(255,255,255,0.82);line-height:1.8;font-size:.94rem;margin:0;font-family:Georgia,serif;font-style:italic}
+.ntextarea{width:100%;padding:15px;border-radius:14px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,94,154,0.2);color:white;font-size:.93rem;outline:none;resize:vertical;line-height:1.8;box-sizing:border-box;margin-bottom:1rem;font-family:inherit;transition:border .2s}
+.ntextarea:focus{border-color:rgba(255,94,154,0.5)}
+#as{min-height:100vh;background:linear-gradient(140deg,#0a0012 0%,#160022 50%,#0a0012 100%);padding:2rem;position:relative;z-index:1}
+.ain{max-width:1020px;margin:0 auto}
+.atab{padding:9px 20px;border-radius:12px;border:none;font-size:.83rem;font-weight:500;transition:all .2s;cursor:pointer;font-family:inherit}
+.atab.active{background:linear-gradient(135deg,rgba(255,94,154,0.28),rgba(210,145,255,0.18));color:#FF9DC8;font-weight:700;border:1px solid rgba(255,94,154,0.28)}
+.atab:not(.active){background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5);border:1px solid transparent}
+.atab:not(.active):hover{background:rgba(255,255,255,0.1);color:white}
+.agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1.1rem}
+.acard{text-align:center;cursor:pointer;padding:1.75rem;border:1px solid rgba(255,255,255,0.08);transition:all .3s;background:linear-gradient(135deg,rgba(255,94,154,0.06),rgba(210,145,255,0.04));border-radius:18px}
+.acard:hover{border-color:rgba(255,94,154,0.4);transform:translateY(-4px);background:linear-gradient(135deg,rgba(255,94,154,0.14),rgba(210,145,255,0.1));box-shadow:0 12px 35px rgba(255,94,154,0.2)}
+.ainput{width:100%;padding:12px 15px;border-radius:12px;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);color:white;font-size:.91rem;outline:none;font-family:inherit;resize:vertical;transition:border .2s;box-sizing:border-box;margin-bottom:.75rem}
+.ainput:focus{border-color:rgba(255,94,154,0.5)}
+.alabel{color:rgba(255,255,255,0.45);font-size:.76rem;margin-bottom:.3rem;display:block;letter-spacing:.06em;text-transform:uppercase}
+.smini{text-align:center;padding:1.2rem;background:linear-gradient(135deg,rgba(255,94,154,0.08),rgba(210,145,255,0.04));border-radius:16px;border:1px solid rgba(255,94,154,0.1)}
+/* Upload zone */
+.upzone{border:2px dashed rgba(255,94,154,0.35);border-radius:18px;padding:2.5rem;text-align:center;background:rgba(255,94,154,0.04);transition:all .3s;cursor:pointer}
+.upzone:hover{border-color:rgba(255,94,154,0.6);background:rgba(255,94,154,0.08)}
+/* Photo upload preview */
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.85rem;margin-top:1rem}
+.photo-item{position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(255,94,154,0.2)}
+.photo-item img{width:100%;aspect-ratio:1;object-fit:cover;display:block;cursor:pointer}
+.photo-item .pcap{padding:.5rem .65rem;background:rgba(0,0,0,0.4);font-size:.73rem;color:rgba(255,255,255,0.65);font-style:italic}
+.photo-item .pdel{position:absolute;top:6px;right:6px;background:rgba(255,60,60,0.8);border:none;color:white;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center}
+#lb{position:fixed;inset:0;z-index:900;background:rgba(0,0,0,0.93);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;padding:2rem;flex-direction:column;gap:1rem}
+#lb img{max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 0 70px rgba(255,94,154,0.3)}
+#lb-cap{color:rgba(255,255,255,0.7);font-style:italic;font-size:.9rem;text-align:center}
+#lbclose{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+#lbclose:hover{background:rgba(255,94,154,0.35)}
+#admin-fab{position:fixed;bottom:1.75rem;right:1.75rem;z-index:600;padding:13px 22px;font-size:.87rem;box-shadow:0 8px 32px rgba(255,94,154,0.45)}
+#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#FF5E9A,#D291FF);color:white;padding:12px 30px;border-radius:30px;font-weight:700;z-index:1100;animation:fadeIn .3s ease;box-shadow:0 8px 30px rgba(255,94,154,0.45);pointer-events:none;white-space:nowrap}
+#upload-progress{position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:rgba(13,0,21,0.9);border:1px solid rgba(255,94,154,0.3);color:white;padding:12px 30px;border-radius:30px;z-index:1100;font-size:.88rem;display:flex;align-items:center;gap:.75rem}
+.prog-bar{width:150px;height:6px;background:rgba(255,255,255,0.15);border-radius:3px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,#FF5E9A,#D291FF);border-radius:3px;transition:width .3s}
+@media(max-width:640px){.tlcard{width:82%!important}.tlrow.right{justify-content:flex-start!important}.tldot{left:8%!important}.tlline{left:8%!important}.sgrid{grid-template-columns:1fr 1fr}.hname{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<div id="bg-canvas"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><div class="blob b5"></div></div>
+<div id="particles-layer"></div><div id="hearts-layer"></div><div id="petals-layer"></div>
+<div id="emodal" class="hidden"><div class="glass" id="emodal-box"><p style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:1.2rem;font-family:Georgia,serif" id="emodal-title">Edit</p><textarea class="minput" id="emodal-input" rows="4"></textarea><div style="display:flex;gap:.75rem;justify-content:flex-end;margin-top:1.2rem"><button class="btn-g" onclick="closeEM()" style="padding:10px 22px">Cancel</button><button class="btn-p" onclick="saveEM()" style="padding:10px 28px">Save ✓</button></div></div></div>
+<div id="lb" class="hidden"><button id="lbclose" onclick="closeLB()">✕</button><img id="lbimg" src="" alt=""><p id="lb-cap"></p></div>
+<div id="toast" class="hidden"></div>
+<div id="upload-progress" class="hidden"><div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div><span id="prog-text">Uploading...</span></div>
+
+<!-- LOGIN -->
+<div id="ls">
+  <div style="text-align:center;max-width:430px;width:100%;animation:fadeIn 1s ease">
+    <div style="display:flex;justify-content:center;align-items:center;gap:.5rem;margin-bottom:1rem;font-size:3.5rem">
+      <span style="filter:drop-shadow(0 0 15px rgba(100,149,237,0.8))">👦</span>
+      <span style="font-size:2.5rem;animation:heartbeat 2s ease-in-out infinite;display:inline-block;filter:drop-shadow(0 0 18px rgba(255,94,154,0.9))">❤️</span>
+      <span style="filter:drop-shadow(0 0 15px rgba(255,105,180,0.8))">👧</span>
+    </div>
+    <h1 style="font-size:2.6rem;font-weight:800;font-family:Georgia,serif;margin-bottom:.4rem;background:linear-gradient(135deg,#FF9DC8,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Our Journey</h1>
+    <p style="color:#D291FF;font-size:1.18rem;margin-bottom:3rem;letter-spacing:.08em;text-shadow:0 0 22px rgba(210,145,255,0.5)">Abdullah ❤️ Ghazala</p>
+    <div class="glass" style="padding:2.25rem">
+      <p style="color:rgba(255,255,255,0.58);margin-bottom:1.75rem;font-size:.94rem;line-height:1.7">This is a private space, crafted with love, just for you. ❤️</p>
+      <input class="pwinput" type="password" id="pwin" placeholder="Enter your password" autocomplete="off">
+      <p id="pwerr" style="color:#FF9DC8;font-size:.82rem;margin-bottom:.8rem;display:none">Incorrect. Try the hint below 💭</p>
+      <button class="btn-p" onclick="doLogin()" style="width:100%;padding:16px;font-size:1.02rem;margin-bottom:.9rem">Open Our Story ❤️</button>
+      <button onclick="toggleHint()" style="background:none;border:none;color:rgba(255,255,255,0.32);cursor:pointer;font-size:.83rem;font-family:inherit" id="hintbtn">Need a hint? 💭</button>
+      <div id="hintbox" class="hintbox hidden">
+        <p style="color:#FF9DC8;font-size:.91rem;font-style:italic;margin-bottom:12px">"Our forever began on our engagement day ❤️"</p>
+        <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,0.08);padding:5px 13px;border-radius:10px;color:rgba(255,255,255,0.5);font-size:.73rem;border:1px solid rgba(255,255,255,0.1)">Format: DDMMYYYY</span>
+          <span style="background:rgba(255,255,255,0.08);padding:5px 13px;border-radius:10px;color:rgba(255,255,255,0.5);font-size:.73rem;border:1px solid rgba(255,255,255,0.1)">Example: 28062023</span>
+        </div>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,0.14);font-size:.71rem;margin-top:1.75rem;letter-spacing:.1em">A PRIVATE ANNIVERSARY GIFT · BUILT WITH LOVE</p>
+  </div>
+</div>
+
+<!-- MAIN SITE -->
+<div id="ms" class="hidden">
+<div id="nav"><div id="nav-inner">
+  <span id="nav-logo">Abdullah ❤️ Ghazala</span>
+  <div id="nav-links">
+    <button class="nb active" onclick="showSec('hero')" data-s="hero">🏠 Home</button>
+    <button class="nb" onclick="showSec('letter')" data-s="letter">💌 Letter</button>
+    <button class="nb" onclick="showSec('timeline')" data-s="timeline">✨ Journey</button>
+    <button class="nb" onclick="showSec('reasons')" data-s="reasons">❤️ 100 Reasons</button>
+    <button class="nb" onclick="showSec('wall')" data-s="wall">💫 Love Wall</button>
+    <button class="nb" onclick="showSec('dreams')" data-s="dreams">🌅 Dreams</button>
+    <button class="nb" onclick="showSec('vault')" data-s="vault">🔒 Vault</button>
+    <button class="nb" onclick="showSec('guest')" data-s="guest">💕 Your Turn</button>
+    <span id="apill" style="display:none">ADMIN ⚙️</span>
+  </div>
+</div></div>
+
+<!-- HERO -->
+<div id="sec-hero" class="section">
+<div id="hwrap">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 90% 55% at 50% 0%,rgba(255,94,154,0.14) 0%,transparent 70%);pointer-events:none"></div>
+  <div style="position:relative;z-index:2;max-width:840px;animation:fadeIn 1s ease;width:100%">
+    <div style="font-size:.82rem;letter-spacing:.4em;color:#89CFF0;text-transform:uppercase;margin-bottom:2rem;opacity:.9" id="h-tag" class="ef" onclick="ae('h-tag','Hero Tagline')">A Private Love Story · Est. 2019<span class="ei">✏️</span></div>
+    <h1 class="htitle">
+      <span class="ef" id="h-l1" onclick="ae('h-l1','Hero Line 1')">6 Years of Love,<span class="ei">✏️</span></span><br>
+      <span class="hgrad ef" id="h-l2" onclick="ae('h-l2','Hero Line 2')">3 Years of Promise,<span class="ei">✏️</span></span><br>
+      <span class="ef" id="h-l3" onclick="ae('h-l3','Hero Line 3')">A Lifetime to Go ❤️<span class="ei">✏️</span></span>
+    </h1>
+    <p style="font-size:1.12rem;color:rgba(255,255,255,0.7);line-height:1.85;max-width:600px;margin:0 auto 2.5rem;font-family:Georgia,serif;font-style:italic" class="ef" id="h-sub" onclick="ae('h-sub','Hero Subtitle')">Ghazala, every moment with you has become one of the most beautiful chapters of my life.<span class="ei">✏️</span></p>
+    <div class="hnames">
+      <span class="hname ef" id="h-n1" onclick="ae('h-n1','Name 1')">Abdullah<span class="ei">✏️</span></span>
+      <span class="hheart">❤️</span>
+      <span class="hname ef" id="h-n2" onclick="ae('h-n2','Name 2')">Ghazala<span class="ei">✏️</span></span>
+    </div>
+    <div class="glass ebadge">
+      <p style="color:#D291FF;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px" class="ef" id="h-elabel" onclick="ae('h-elabel','Engagement Label')">Since Our Engagement<span class="ei">✏️</span></p>
+      <p style="color:white;font-size:1rem;font-weight:600" id="engval">Calculating...</p>
+    </div>
+    <div class="sgrid">
+      <div class="glass sc"><div class="sv" id="s-yr">0+</div><div class="sl ef" id="s-l1" onclick="ae('s-l1','Stat 1 Label')">Years Together<span class="ei">✏️</span></div></div>
+      <div class="glass sc"><div class="sv" id="s-dy">0</div><div class="sl ef" id="s-l2" onclick="ae('s-l2','Stat 2 Label')">Days of Love<span class="ei">✏️</span></div></div>
+      <div class="glass sc"><div class="sv" id="s-mo">0</div><div class="sl ef" id="s-l3" onclick="ae('s-l3','Stat 3 Label')">Months Together<span class="ei">✏️</span></div></div>
+      <div class="glass sc"><div class="sv" id="s-mm">0</div><div class="sl ef" id="s-l4" onclick="ae('s-l4','Stat 4 Label')">Memories Made<span class="ei">✏️</span></div></div>
+    </div>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <div style="padding:10px 22px;border-radius:30px;background:rgba(255,94,154,0.12);border:1px solid rgba(255,94,154,0.24);color:rgba(255,255,255,0.7);font-size:.81rem" class="ef" id="h-b1" onclick="ae('h-b1','Date Badge 1')">💍 Proposed: 15 February 2021<span class="ei">✏️</span></div>
+      <div style="padding:10px 22px;border-radius:30px;background:rgba(210,145,255,0.12);border:1px solid rgba(210,145,255,0.24);color:rgba(255,255,255,0.7);font-size:.81rem" class="ef" id="h-b2" onclick="ae('h-b2','Date Badge 2')">💒 Engaged: 28 June 2023<span class="ei">✏️</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- LETTER -->
+<div id="sec-letter" class="section hidden"><div class="sw">
+  <div class="sh"><div class="se">💌</div><h2 class="st ef" id="t-letter" onclick="ae('t-letter','Letter Title')">A Letter From My Heart<span class="ei">✏️</span></h2><div class="dv"></div></div>
+  <div class="glass" style="padding:2.75rem" id="letter-body"></div>
+  <div id="add-lpara" class="hidden" style="margin-top:1.5rem;text-align:center"><button class="btn-p" onclick="addLPara()" style="padding:11px 26px;font-size:.9rem">+ Add Paragraph</button></div>
+</div></div>
+
+<!-- TIMELINE -->
+<div id="sec-timeline" class="section hidden"><div class="sw" style="max-width:880px">
+  <div class="sh"><div class="se">✨</div><h2 class="st ef" id="t-timeline" onclick="ae('t-timeline','Timeline Title')">Our Journey Together<span class="ei">✏️</span></h2><p class="ss ef" id="s-timeline" onclick="ae('s-timeline','Timeline Subtitle')">Every chapter that made us who we are.<span class="ei">✏️</span></p><div class="dv"></div></div>
+  <div class="tlwrap"><div class="tlline"></div><div id="tl-body"></div></div>
+  <div id="add-tl" class="hidden" style="margin-top:2rem;text-align:center"><button class="btn-p" onclick="addTL()" style="padding:12px 28px;font-size:.9rem">+ Add Timeline Event</button></div>
+</div></div>
+
+<!-- REASONS -->
+<div id="sec-reasons" class="section hidden"><div class="sw">
+  <div class="sh"><div class="se">❤️</div><h2 class="st ef" id="t-reasons" onclick="ae('t-reasons','Reasons Title')">100 Reasons I Love You<span class="ei">✏️</span></h2><p class="ss ef" id="s-reasons" onclick="ae('s-reasons','Reasons Subtitle')">Because words are not enough — but they are a beginning.<span class="ei">✏️</span></p><div class="dv"></div></div>
+  <div id="reasons-list" style="display:flex;flex-direction:column;gap:.9rem"></div>
+  <div style="display:flex;justify-content:center;align-items:center;gap:1.25rem;margin-top:2.25rem">
+    <button class="btn-g" id="pbtn-prev" onclick="chPage(-1)" style="padding:10px 24px;font-size:.88rem">← Previous</button>
+    <div id="pdots" style="display:flex;gap:7px;align-items:center"></div>
+    <button class="btn-g" id="pbtn-next" onclick="chPage(1)" style="padding:10px 24px;font-size:.88rem">Next →</button>
+  </div>
+  <p id="pinfo" style="text-align:center;color:rgba(255,255,255,0.2);font-size:.74rem;margin-top:1rem"></p>
+  <div id="add-reason" class="hidden" style="margin-top:1.5rem;text-align:center"><button class="btn-p" onclick="addReason()" style="padding:11px 26px;font-size:.9rem">+ Add Reason</button></div>
+</div></div>
+
+<!-- LOVE WALL -->
+<div id="sec-wall" class="section hidden"><div class="sww">
+  <div class="sh"><div class="se">💫</div><h2 class="st ef" id="t-wall" onclick="ae('t-wall','Wall Title')">Love Wall<span class="ei">✏️</span></h2><p class="ss ef" id="s-wall" onclick="ae('s-wall','Wall Subtitle')">Words that float between us, always true.<span class="ei">✏️</span></p><div class="dv"></div></div>
+  <div class="wgrid" id="wall-body"></div>
+  <div id="add-wall" class="hidden" style="margin-top:2rem;text-align:center"><button class="btn-p" onclick="addWall()" style="padding:12px 28px;font-size:.9rem">+ Add Love Message</button></div>
+</div></div>
+
+<!-- DREAMS -->
+<div id="sec-dreams" class="section hidden"><div class="sww">
+  <div class="sh"><div class="se">🌅</div><h2 class="st ef" id="t-dreams" onclick="ae('t-dreams','Dreams Title')">Our Future Dreams<span class="ei">✏️</span></h2><p class="ss ef" id="s-dreams" onclick="ae('s-dreams','Dreams Subtitle')">Everything we are still becoming, together.<span class="ei">✏️</span></p><div class="dv"></div></div>
+  <div class="dgrid" id="dreams-body"></div>
+  <div id="add-dream" class="hidden" style="margin-top:2rem;text-align:center"><button class="btn-p" onclick="addDream()" style="padding:12px 28px;font-size:.9rem">+ Add Dream</button></div>
+</div></div>
+
+<!-- VAULT (Photos + Text) -->
+<div id="sec-vault" class="section hidden"><div class="sw" style="max-width:760px">
+  <div id="vault-locked">
+    <div class="sh"><div class="se">🔒</div><h2 class="st">Secret Memory Vault</h2><div class="dv"></div></div>
+    <div class="glass" style="padding:2.5rem;text-align:center" id="vcard">
+      <p style="color:rgba(255,255,255,0.42);font-size:.9rem;margin-bottom:1.85rem;line-height:1.65">Our most precious memories and photos — locked just for us.</p>
+      <input class="pwinput" type="password" id="vpw" placeholder="Vault password" autocomplete="off">
+      <button class="btn-p" onclick="tryVault()" style="width:100%;padding:15px;margin-bottom:.9rem;font-size:.99rem">Unlock Vault 💍</button>
+      <button onclick="toggleVH()" style="background:none;border:none;color:rgba(255,255,255,0.28);cursor:pointer;font-size:.83rem;font-family:inherit">Need a hint? 💭</button>
+      <div id="vhint" class="glass-gold hidden" style="margin-top:1rem;padding:1.2rem">
+        <p style="color:#FFD700;font-size:.9rem;font-style:italic;margin-bottom:8px">"The day I asked you to be mine forever 💍"</p>
+        <p style="color:rgba(255,255,255,0.3);font-size:.75rem">Format: DDMMYYYY · Answer: 15022021</p>
+      </div>
+    </div>
+  </div>
+  <div id="vault-open" class="hidden"></div>
+</div></div>
+
+<!-- GUESTBOOK -->
+<div id="sec-guest" class="section hidden"><div class="sw" style="max-width:760px">
+  <div class="sh"><div class="se">💕</div><h2 class="st ef" id="t-guest" onclick="ae('t-guest','Guestbook Title')">Your Turn, Ghazala ❤️<span class="ei">✏️</span></h2><p class="ss ef" id="s-guest" onclick="ae('s-guest','Guestbook Subtitle')">This story has always had two voices. Write yours here.<span class="ei">✏️</span></p><div class="dv"></div></div>
+  <div id="notes-body"></div>
+  <div class="glass" style="padding:2rem;margin-top:1.25rem;background:linear-gradient(135deg,rgba(255,94,154,0.08),rgba(210,145,255,0.05))">
+    <p style="color:rgba(255,255,255,0.4);font-size:.86rem;margin-bottom:1rem">Write your feelings, your memories, your heart... ❤️</p>
+    <textarea class="ntextarea" id="note-in" rows="6" placeholder="Your love lives here too, Mahi. This space is yours..."></textarea>
+    <p id="note-sent" style="color:#89CFF0;font-size:.86rem;margin-bottom:.8rem;display:none">💕 Saved with love, forever.</p>
+    <button class="btn-p" onclick="submitNote()" style="padding:14px 38px;font-size:.97rem">Send With Love 💌</button>
+  </div>
+</div></div>
+
+<div style="position:relative;z-index:1;border-top:1px solid rgba(255,94,154,0.14);padding:3rem 1.5rem;text-align:center;background:linear-gradient(180deg,transparent,rgba(255,94,154,0.05))">
+  <div style="font-size:2.5rem;margin-bottom:.9rem;animation:heartbeat 2s ease-in-out infinite;display:inline-block;filter:drop-shadow(0 0 18px rgba(255,94,154,0.65))">❤️</div>
+  <p style="color:rgba(255,255,255,0.28);font-size:.9rem;font-family:Georgia,serif;font-style:italic" class="ef" id="h-ft" onclick="ae('h-ft','Footer Quote')">"Made with every piece of my heart, for the person who holds it."<span class="ei">✏️</span></p>
+  <p style="color:rgba(255,255,255,0.13);font-size:.73rem;margin-top:.7rem;letter-spacing:.1em" class="ef" id="h-fs" onclick="ae('h-fs','Footer Sub')">ABDULLAH ❤️ GHAZALA · FOREVER<span class="ei">✏️</span></p>
+</div>
+</div>
+
+<button class="btn-p hidden" id="admin-fab" onclick="openAdmin()">⚙️ Admin Panel</button>
+
+<!-- ADMIN -->
+<div id="as" class="hidden"><div class="ain">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2.25rem;flex-wrap:wrap;gap:1rem;padding-top:1rem">
+    <div><h1 style="font-size:1.8rem;font-family:Georgia,serif;background:linear-gradient(135deg,#FF9DC8,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Admin Dashboard ⚙️</h1><p style="color:rgba(255,255,255,0.32);font-size:.8rem;margin-top:4px">Abdullah's Control Panel · Full Access</p></div>
+    <button class="btn-g" onclick="exitAdmin()" style="padding:11px 24px;font-size:.9rem">← View Website</button>
+  </div>
+  <div style="display:flex;gap:8px;margin-bottom:2rem;flex-wrap:wrap">
+    <button class="atab active" onclick="aTab('overview',this)">Overview</button>
+    <button class="atab" onclick="aTab('alltext',this)">✏️ All Text</button>
+    <button class="atab" onclick="aTab('tl',this)">Timeline</button>
+    <button class="atab" onclick="aTab('re',this)">100 Reasons</button>
+    <button class="atab" onclick="aTab('wa',this)">Love Wall</button>
+    <button class="atab" onclick="aTab('va',this)">Vault Photos</button>
+    <button class="atab" onclick="aTab('dr',this)">Dreams</button>
+    <button class="atab" onclick="aTab('le',this)">Letter</button>
+    <button class="atab" onclick="aTab('gb',this)">Guestbook</button>
+  </div>
+
+  <div id="at-overview">
+    <div class="agrid" style="margin-bottom:2rem">
+      <div class="glass acard" onclick="aTab('alltext',document.querySelectorAll('.atab')[1])"><div style="font-size:2rem;margin-bottom:.6rem">✏️</div><div style="color:white;font-weight:700">Edit All Text</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Every word on site</div></div>
+      <div class="glass acard" onclick="aTab('tl',document.querySelectorAll('.atab')[2])"><div style="font-size:2rem;margin-bottom:.6rem">🗺️</div><div style="color:white;font-weight:700">Timeline</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Journey events + photos</div></div>
+      <div class="glass acard" onclick="aTab('re',document.querySelectorAll('.atab')[3])"><div style="font-size:2rem;margin-bottom:.6rem">❤️</div><div style="color:white;font-weight:700">100 Reasons</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Edit all love reasons</div></div>
+      <div class="glass acard" onclick="aTab('wa',document.querySelectorAll('.atab')[4])"><div style="font-size:2rem;margin-bottom:.6rem">💫</div><div style="color:white;font-weight:700">Love Wall</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Manage messages</div></div>
+      <div class="glass acard" onclick="aTab('va',document.querySelectorAll('.atab')[5])"><div style="font-size:2rem;margin-bottom:.6rem">🔒</div><div style="color:white;font-weight:700">Vault Photos</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Upload secret photos</div></div>
+      <div class="glass acard" onclick="aTab('dr',document.querySelectorAll('.atab')[6])"><div style="font-size:2rem;margin-bottom:.6rem">🌅</div><div style="color:white;font-weight:700">Dreams</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Future plans</div></div>
+      <div class="glass acard" onclick="aTab('le',document.querySelectorAll('.atab')[7])"><div style="font-size:2rem;margin-bottom:.6rem">💌</div><div style="color:white;font-weight:700">Love Letter</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Edit paragraphs</div></div>
+      <div class="glass acard" onclick="aTab('gb',document.querySelectorAll('.atab')[8])"><div style="font-size:2rem;margin-bottom:.6rem">💕</div><div style="color:white;font-weight:700">Guestbook</div><div style="color:rgba(255,255,255,0.32);font-size:.73rem;margin-top:4px">Her messages</div></div>
+    </div>
+    <div class="glass" style="padding:2rem">
+      <h3 style="color:white;margin-bottom:1.25rem;font-weight:700">Statistics</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;margin-bottom:1.5rem">
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-re">100</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Love Reasons</div></div>
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-tl">8</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Timeline Events</div></div>
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-wa">16</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Wall Messages</div></div>
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-vp">0</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Vault Photos</div></div>
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-no">0</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Her Notes</div></div>
+        <div class="smini"><div style="font-size:1.65rem;font-weight:800;background:linear-gradient(135deg,#FF5E9A,#D291FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="as-tlp">0</div><div style="color:rgba(255,255,255,0.38);font-size:.72rem;margin-top:4px">Timeline Photos</div></div>
+      </div>
+      <div style="padding:1.1rem;background:linear-gradient(135deg,rgba(137,207,240,0.08),rgba(210,145,255,0.05));border-radius:13px;border:1px solid rgba(137,207,240,0.17)">
+        <p style="color:rgba(255,255,255,0.5);font-size:.83rem;line-height:1.65;margin:0"><strong style="color:#89CFF0">🔥 Firebase Connected:</strong> All changes save to Firestore in real-time. Images upload to Firebase Storage. Content loads fresh every visit automatically.</p>
+      </div>
+      <div style="margin-top:1rem;padding:1rem;background:rgba(255,215,0,0.07);border-radius:13px;border:1px solid rgba(255,215,0,0.18)">
+        <p style="color:#FFD700;font-size:.82rem;font-weight:700;margin-bottom:.3rem">⚠️ Firebase Rules Required</p>
+        <p style="color:rgba(255,255,255,0.5);font-size:.79rem;line-height:1.6;margin:0">Your current rules block all reads/writes. Go to Firebase Console → Firestore → Rules and replace with: <code style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:6px;font-size:.75rem">allow read, write: if true;</code> — also do the same for Storage Rules.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="at-alltext" class="hidden"><div class="glass" style="padding:2rem"><h3 style="color:white;margin-bottom:.5rem;font-weight:700">Edit All Text Fields</h3><p style="color:rgba(255,255,255,0.32);font-size:.83rem;margin-bottom:2rem">Every editable text on the site. Click Edit — saves to Firebase instantly.</p><div id="allfields"></div></div></div>
+
+  <div id="at-tl" class="hidden"><div class="glass" style="padding:2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem"><h3 style="color:white;font-weight:700">Timeline Events</h3><button class="btn-p" onclick="addTL()" style="padding:10px 22px;font-size:.88rem">+ Add Event</button></div>
+    <div id="adm-tl"></div>
+  </div></div>
+
+  <div id="at-re" class="hidden"><div class="glass" style="padding:2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem"><h3 style="color:white;font-weight:700">100 Reasons I Love You</h3><button class="btn-p" onclick="addReason()" style="padding:10px 22px;font-size:.88rem">+ Add Reason</button></div>
+    <div id="adm-re" style="display:flex;flex-direction:column;gap:.6rem;max-height:600px;overflow-y:auto"></div>
+  </div></div>
+
+  <div id="at-wa" class="hidden"><div class="glass" style="padding:2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem"><h3 style="color:white;font-weight:700">Love Wall Messages</h3><button class="btn-p" onclick="addWall()" style="padding:10px 22px;font-size:.88rem">+ Add Message</button></div>
+    <div id="adm-wa" style="display:flex;flex-direction:column;gap:.6rem"></div>
+  </div></div>
+
+  <div id="at-va" class="hidden"><div class="glass" style="padding:2rem">
+    <h3 style="color:white;font-weight:700;margin-bottom:.5rem">Vault Photos — Secret Gallery</h3>
+    <p style="color:rgba(255,255,255,0.35);font-size:.83rem;margin-bottom:1.5rem">Photos are locked behind the vault password. Each photo can have a caption/text.</p>
+    <div class="upzone" onclick="document.getElementById('vfile').click()" ondragover="event.preventDefault()" ondrop="handleVDrop(event)">
+      <div style="font-size:3rem;margin-bottom:1rem">🔒📸</div>
+      <p style="color:rgba(255,255,255,0.45);margin-bottom:1.25rem;font-size:.92rem">Drag & drop photos or click to browse</p>
+      <input type="file" id="vfile" multiple accept="image/*" style="display:none" onchange="uploadVaultPhotos(this)">
+      <button class="btn-p" onclick="event.stopPropagation();document.getElementById('vfile').click()" style="padding:12px 28px;font-size:.9rem">Upload Secret Photos</button>
+      <p style="color:rgba(255,255,255,0.18);font-size:.75rem;margin-top:1rem">Stored securely in Firebase Storage</p>
+    </div>
+    <div id="adm-va" class="photo-grid" style="margin-top:1.5rem"></div>
+  </div></div>
+
+  <div id="at-dr" class="hidden"><div class="glass" style="padding:2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem"><h3 style="color:white;font-weight:700">Future Dreams</h3><button class="btn-p" onclick="addDream()" style="padding:10px 22px;font-size:.88rem">+ Add Dream</button></div>
+    <div id="adm-dr" style="display:flex;flex-direction:column;gap:.75rem"></div>
+  </div></div>
+
+  <div id="at-le" class="hidden"><div class="glass" style="padding:2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem"><h3 style="color:white;font-weight:700">Love Letter</h3><button class="btn-p" onclick="addLPara()" style="padding:10px 22px;font-size:.88rem">+ Add Paragraph</button></div>
+    <div id="adm-le" style="display:flex;flex-direction:column;gap:.75rem"></div>
+  </div></div>
+
+  <div id="at-gb" class="hidden"><div class="glass" style="padding:2rem">
+    <h3 style="color:white;font-weight:700;margin-bottom:1.5rem">Guestbook — Her Messages</h3>
+    <div id="adm-gb" style="display:flex;flex-direction:column;gap:.75rem"></div>
+  </div></div>
+
+</div></div>
+<script>
+const PW={v:"28062023",a:"143744",vt:"15022021"};
+let access=null,pg=0,fbReady=false;
+const PPG=10;
+
+let D={
+reasons:["Your smile changes my entire day — it is the sun I orbit around.","You make ordinary moments feel like scenes from a beautiful story.","You understand me even when I cannot find the words to explain myself.","You celebrate my victories as if they were your own greatest triumphs.","You stay beside me during the hardest nights without ever complaining.","Your laughter is the most beautiful sound I have ever heard.","You love with a depth that still takes my breath away after six years.","You are patient with me even when I don't deserve it — and that is grace.","You see the best in me even when I have forgotten it myself.","Your kindness flows naturally — it is who you are, not a role you play.","You make home feel like the safest place in the entire world.","You remember the little things that matter most to people you love.","You push me to be better without ever making me feel less.","You carry your strength quietly and with extraordinary grace.","Your faith in me has moved mountains I thought were immovable.","You bring peace into every room you enter — genuinely.","You are honest with me — gently, lovingly, always.","You forgive me before I even finish my apology.","Your eyes hold a whole universe I want to spend my lifetime exploring.","You make sacrifices without ever asking to be recognized for them.","You dream big and you make those dreams feel possible for both of us.","You are consistent in your love — not just on the good days.","You know how to listen with your whole heart, not just your ears.","You make even the most mundane tasks feel like small adventures.","You stand by your values with a quiet, steady dignity.","You are the first person I want to tell every piece of good news to.","You comfort me in ways that no words could ever fully describe.","You have made me understand what it truly means to love someone.","You are beautiful in every single way — inside and endlessly out.","You carry yourself with a grace that is entirely, uniquely yours.","You are my favorite distraction and my greatest daily motivation.","You respect me — and I know exactly what a gift that kind of respect is.","You match my energy on the days I need it the absolute most.","You make me want to be the man who is worthy of your love.","You teach me compassion simply by being yourself every single day.","You never give up — on dreams, on people, on us.","Your presence turns any ordinary evening into something I remember.","You hold my hand like you never intend to let it go.","You are endlessly curious about the world and it is utterly beautiful.","You make me laugh on the days I genuinely didn't think I could.","You bring warmth to everyone around you without even trying to.","You are brave in ways that inspire me every single day of my life.","You choose love even when it would be so much easier to choose silence.","You are gentle with the things and people that truly matter.","You show up — completely, fully, without reservation, always.","You make me feel truly seen, not just looked at.","You have a heart big enough to hold the whole world inside it.","You find beauty in the smallest things and then share it with me.","You never make me feel alone, even when we are far apart.","You are my anchor when everything else feels uncertain and shifting.","You are the calm that follows every storm I have ever faced.","You have a smile that could end arguments and begin entire poems.","You never let pride come between us and our resolution.","You carry our future in your heart with such extraordinary care.","You are someone I can grow old alongside and never feel old.","You challenge me thoughtfully and love me unconditionally.","You make tea taste better and mornings feel less difficult.","You have made me believe in the kind of love I once doubted existed.","You are emotionally intelligent in a way that genuinely humbles me.","You do not hold grudges — you choose peace every single time.","You make every anniversary feel like we are beginning again.","You are home — not a place, a person. My person.","You are the reason I want to work harder and rest peacefully.","You give without keeping any kind of score between us.","You are the standard by which I measure everything good in my life.","You take care of everyone around you and I see exactly what it costs.","You still surprise me — after six whole beautiful years together.","You make me proud every single day just by simply being you.","You are loyal in a world that has largely forgotten what loyalty means.","You ask the right questions and sit patiently with the answers.","You love my family as your own and that means everything to me.","You are present — truly, fully, completely, always here.","You carry grace in the way you handle every difficulty life brings.","You find joy and share it generously with everyone around you.","You make silence feel comfortable and every conversation feel alive.","You remember my dreams even on the days I have stopped dreaming them.","You are the one I want to call first — every single time.","You love without conditions attached — and that is genuinely rare.","You trust me and I understand completely what a gift real trust is.","You are more than everything I ever prayed for and all I needed.","You make the weight of the world lighter just by being beside me.","You walk into a room and somehow it immediately gets warmer.","You are not afraid to be soft in a world that rewards hardness.","You love deeply and that depth is your single greatest strength.","You apologize when you are wrong and it speaks to your character.","You are the one constant in a life that is full of change.","You make me want to write poetry even though I never could.","You are enough. You have always been more than enough.","You give me peace — and peace, I have learned, is everything.","You are the very best chapter of my entire story.","You are the reason I believe in something greater than myself.","You are my partner, my best friend, my favorite person.","You make every promise feel sacred and genuinely worth keeping.","You are the answer to questions I didn't even know I was asking.","You fill the spaces in my life I didn't know were empty.","You turn every ordinary moment into something extraordinary.","You are the first thought I have when I wake each morning.","You are the last thought I carry before I close my eyes at night.","You are every thought in between — and I would not have it any other way.","You are my greatest adventure, my deepest love, my entire lifetime."],
+timeline:[
+  {id:"t1",emoji:"💬",title:"First Conversation",date:"2019",desc:"The day everything changed — a simple hello that would quietly become the beginning of our entire world together.",color:"#FF5E9A",photos:[]},
+  {id:"t2",emoji:"👀",title:"First Meeting",date:"2019",desc:"When I saw you for the first time, I understood instantly why certain moments stay with a person forever.",color:"#D291FF",photos:[]},
+  {id:"t3",emoji:"😄",title:"First Laugh Together",date:"2019–2020",desc:"Your laugh — I knew then and there that I never wanted to stop hearing it. It became my single favorite sound.",color:"#89CFF0",photos:[]},
+  {id:"t4",emoji:"✨",title:"First Special Memory",date:"2020",desc:"A moment that belongs only to us. The kind you return to quietly on the hard days, to remember what is real.",color:"#FFB6C1",photos:[]},
+  {id:"t5",emoji:"💍",title:"Proposal Day",date:"15 February 2021",desc:"I asked you to be mine forever. You said yes. And that single moment became the most beautiful of my entire life.",color:"#FFD700",photos:[]},
+  {id:"t6",emoji:"💒",title:"Engagement Day",date:"28 June 2023",desc:"We made our promise in front of everyone we love. You were radiant. You were absolutely everything.",color:"#D291FF",photos:[]},
+  {id:"t7",emoji:"❤️",title:"Six Years & Counting",date:"Today",desc:"Six years of choosing each other every single day. And I would choose you a thousand times over, always.",color:"#FF5E9A",photos:[]},
+  {id:"t8",emoji:"🌅",title:"Our Wedding Chapter",date:"Coming Soon",desc:"The chapter we are building together, with love and patience — our home, our family, our forever.",color:"#89CFF0",photos:[]}
+],
+wall:["I still choose you, every single day.","You are my safest place in this world.","My favorite future includes only you.","Forever was always meant to start with you.","You are not just my love — you are my home.","In every version of my life, I choose you.","You are worth every moment of patience.","My heart found its peace when it found you.","Six years later and I still fall for you.","You turned ordinary days extraordinary.","I love you — today, tomorrow, always.","You are enough. You always have been.","My greatest adventure is loving you.","You made my entire world more beautiful.","Thank you for staying beside me.","You are my most answered prayer."],
+letter:[
+  {opener:"My Mahi,",body:"I have been trying to find the right words for six years now. Every time I think I have captured what you mean to me, I fall short. Because how do you describe something that has become the very air you breathe? That is what you are to me. You are not a chapter in my story — you are the reason the story is worth reading at all."},
+  {opener:"Janu,",body:"Before you, life was ordinary. Not unhappy — just ordinary. And then you arrived, with that smile that changes rooms and that heart that changes people. With you, every single day became meaningful. Mondays felt worth waking up for. Small moments — a shared laugh, a quiet evening, a look across a crowded room — became the things I treasured most."},
+  {opener:"Dhola Jana,",body:"Your kindness is not something you perform — it is simply who you are. I have watched you show up for people who had nothing to give you back. I have seen you choose patience when frustration would have been so much easier. You are rare, Ghazala. Genuinely, deeply rare."},
+  {opener:"Baby,",body:"You have been my peace in chaos. When the world has been loud and impossibly heavy, you have been the quiet I came home to. You became my comfort. My safety. My stillness. You are not just my partner in this life — you are my favorite person on this entire earth."},
+  {opener:"Janeman,",body:"Three years engaged. Six years together. And somehow, impossibly, I love you more today than any day that came before it. That is your magic. You do not let love grow stale — you grow it. I am a better man because of you. More patient, more grateful, more present. You did that. You."},
+  {opener:"Forever and always yours,",body:"Abdullah ❤️"}
+],
+vaultPhotos:[],
+dreams:[
+  {icon:"💒",title:"Our Wedding Day",desc:"The day we stand together and say 'I do' in front of everyone we love — the most joyful celebration of everything we have built."},
+  {icon:"🏠",title:"Our First Home",desc:"A home filled with warmth, laughter, and the kind of deep peace that only comes from being exactly where you belong."},
+  {icon:"✈️",title:"Traveling the World",desc:"Every corner of the world is waiting for us — new cities, quiet mornings, shared adventures that become our favorite stories."},
+  {icon:"👨‍👩‍👧",title:"Our Family",desc:"Someday we will look at little faces that carry our love forward into the world, and that thought fills me with profound joy."},
+  {icon:"🌙",title:"Growing Old Together",desc:"Still laughing at the same things decades from now, still choosing each other — two people who built something genuinely beautiful."},
+  {icon:"💫",title:"Every Dream Between",desc:"All the small moments, quiet evenings, inside jokes, and ordinary Tuesdays that quietly become the very fabric of a life well loved."}
+],
+notes:[{name:"A note from Abdullah",text:"This space was built just for you, Mahi. Write whatever your heart holds. This story has always had two voices. 💕",date:"Always"}]
+};
+
+// FIREBASE
+window.addEventListener('fb-ready',async()=>{fbReady=true;await loadFB();});
+async function loadFB(){
+  if(!fbReady)return;
+  const {db,collection,getDocs,doc,getDoc}=window._fb;
+  // Load each collection
+  const cols=['reasons','timeline','wall','letter','vaultPhotos','dreams','notes'];
+  for(const c of cols){
+    try{
+      const snap=await getDocs(collection(db,c));
+      if(!snap.empty){
+        const arr=[];snap.forEach(d=>arr.push({_docId:d.id,...d.data()}));
+        arr.sort((a,b)=>(a.order||0)-(b.order||0));
+        if(c==='reasons'||c==='wall') D[c]=arr.map(x=>x.text||x);
+        else D[c]=arr;
+      }
+    }catch(e){console.log('Load error',c,e);}
+  }
+  // Load text fields
+  try{
+    const snap=await getDoc(doc(db,'config','tf'));
+    if(snap.exists()){
+      const f=snap.data();
+      Object.keys(f).forEach(id=>{
+        const el=document.getElementById(id);
+        if(el){const icon=el.querySelector('.ei');el.childNodes.forEach(n=>{if(n.nodeType===3)n.textContent='';});const tn=document.createTextNode(f[id]);if(icon)el.insertBefore(tn,icon);else el.appendChild(tn);}
+      });
+    }
+  }catch(e){}
+  rebuildAll();
+  toast('✅ Data loaded from Firebase!');
+}
+
+async function saveFBCol(col,arr){
+  if(!fbReady){toast('⚠️ Firebase not connected yet');return;}
+  const {db,collection,getDocs,addDoc,deleteDoc,doc}=window._fb;
+  try{
+    const snap=await getDocs(collection(db,col));
+    const dels=snap.docs.map(d=>deleteDoc(doc(db,col,d.id)));
+    await Promise.all(dels);
+    for(let i=0;i<arr.length;i++){
+      const item=typeof arr[i]==='string'?{text:arr[i],order:i}:{...arr[i],order:i};
+      delete item._docId;
+      await addDoc(collection(db,col),item);
+    }
+  }catch(e){console.log('Save error',col,e);toast('❌ Save failed — check Firebase Rules!');}
+}
+
+async function saveTF(id,val){
+  if(!fbReady)return;
+  const {db,doc,setDoc,getDoc}=window._fb;
+  try{const ref=doc(db,'config','tf');const snap=await getDoc(ref);const ex=snap.exists()?snap.data():{};ex[id]=val;await setDoc(ref,ex);}catch(e){console.log(e);}
+}
+
+// BG
+function buildBG(){
+  const pc=document.getElementById('particles-layer'),hc=document.getElementById('hearts-layer'),pel=document.getElementById('petals-layer');
+  const pc2=['#FF5E9A','#D291FF','#FFB6C1','#FF69B4','#DDA0DD','#FFD700','#FFC0CB'];
+  for(let i=0;i<42;i++){const d=document.createElement('div');const s=1.5+Math.random()*4;d.style.cssText=`position:absolute;width:${s}px;height:${s}px;border-radius:50%;background:${pc2[Math.floor(Math.random()*pc2.length)]};left:${Math.random()*100}%;top:${Math.random()*100}%;animation:twinkle ${3+Math.random()*6}s ease-in-out ${Math.random()*8}s infinite`;pc.appendChild(d);}
+  const he=['❤️','💕','💖','💗','💓','💝','🌸','✨','🌺','💞'];
+  for(let i=0;i<20;i++){const d=document.createElement('div');d.style.cssText=`position:absolute;left:${2+Math.random()*96}%;bottom:-50px;font-size:${15+Math.random()*26}px;animation:floatUp ${10+Math.random()*15}s linear ${Math.random()*20}s infinite;opacity:.45`;d.textContent=he[Math.floor(Math.random()*he.length)];hc.appendChild(d);}
+  const pc3=['#FF9DC8','#FFB6C1','#D291FF','#FFD1DC','#FFC0CB'];
+  for(let i=0;i<18;i++){const d=document.createElement('div');const s=8+Math.random()*14;d.style.cssText=`position:absolute;left:${Math.random()*100}%;top:-25px;width:${s}px;height:${s}px;background:${pc3[Math.floor(Math.random()*pc3.length)]};border-radius:50% 0 50% 0;opacity:.45;animation:petalFall ${8+Math.random()*14}s linear ${Math.random()*18}s infinite`;pel.appendChild(d);}
+}
+
+// LOGIN
+function doLogin(){
+  const v=document.getElementById('pwin').value.trim();
+  if(v===PW.v){enterSite('viewer');return;}
+  if(v===PW.a){enterSite('admin');return;}
+  document.getElementById('pwerr').style.display='block';
+  const box=document.getElementById('pwin').parentElement;
+  box.style.animation='';void box.offsetWidth;box.style.animation='shake .5s ease';
+  document.getElementById('pwin').value='';
+  setTimeout(()=>box.style.animation='',600);
+}
+function toggleHint(){const h=document.getElementById('hintbox'),b=document.getElementById('hintbtn');h.classList.toggle('hidden');b.textContent=h.classList.contains('hidden')?'Need a hint? 💭':'Hide hint ✕';}
+document.getElementById('pwin').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+
+function enterSite(mode){
+  access=mode;
+  document.getElementById('ls').style.display='none';
+  document.getElementById('ms').classList.remove('hidden');
+  if(mode==='admin'){
+    document.getElementById('apill').style.display='inline-block';
+    document.getElementById('admin-fab').classList.remove('hidden');
+    document.body.classList.add('admin-mode');
+    ['add-lpara','add-tl','add-reason','add-wall','add-dream'].forEach(id=>{const el=document.getElementById(id);if(el)el.classList.remove('hidden');});
+  }
+  initHero();rebuildAll();
+}
+
+// HERO — engagement date now 28 June 2023
+function initHero(){
+  const eng=new Date("2023-06-28"),tog=new Date("2019-01-01"),now=new Date();
+  const days=Math.floor((now-tog)/86400000),months=Math.floor(days/30);
+  const d=Math.floor((now-eng)/86400000),y=Math.floor(d/365),m=Math.floor((d%365)/30),dd=d%30;
+  document.getElementById('engval').textContent=`${y} years, ${m} months & ${dd} days`;
+  animC('s-yr',6,'+');animC('s-dy',days);animC('s-mo',months);animC('s-mm',2847);
+}
+function animC(id,target,sfx=''){
+  const el=document.getElementById(id);if(!el)return;let cur=0;
+  const step=Math.max(1,Math.ceil(target/80));
+  const t=setInterval(()=>{cur=Math.min(cur+step,target);el.textContent=cur.toLocaleString()+sfx;if(cur>=target)clearInterval(t);},18);
+}
+
+// NAV
+function showSec(s){
+  ['hero','letter','timeline','reasons','wall','dreams','vault','guest'].forEach(x=>{const el=document.getElementById('sec-'+x);if(el)el.classList.toggle('hidden',x!==s);});
+  document.querySelectorAll('.nb').forEach(b=>b.classList.toggle('active',b.getAttribute('data-s')===s));
+  if(s==='reasons')renderReasons();
+  window.scrollTo(0,0);
+}
+
+// EDIT MODAL
+let _eid=null;
+function ae(id,label){
+  if(access!=='admin')return;
+  const el=document.getElementById(id);if(!el)return;
+  let txt='';el.childNodes.forEach(n=>{if(n.nodeType===3)txt+=n.textContent;});txt=txt.trim();
+  _eid=id;
+  document.getElementById('emodal-title').textContent='Edit: '+label;
+  document.getElementById('emodal-input').value=txt;
+  document.getElementById('emodal-input').rows=txt.length>100?6:3;
+  document.getElementById('emodal').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('emodal-input').focus(),100);
+}
+function closeEM(){document.getElementById('emodal').classList.add('hidden');}
+async function saveEM(){
+  const val=document.getElementById('emodal-input').value.trim();if(!val){closeEM();return;}
+  const el=document.getElementById(_eid);
+  if(el){const icon=el.querySelector('.ei');el.childNodes.forEach(n=>{if(n.nodeType===3)n.textContent='';});const tn=document.createTextNode(val);if(icon)el.insertBefore(tn,icon);else el.appendChild(tn);}
+  await saveTF(_eid,val);closeEM();toast('✓ Saved!');
+}
+document.getElementById('emodal').addEventListener('click',function(e){if(e.target===this)closeEM();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeEM();});
+
+// REBUILD
+function rebuildAll(){buildLetter();buildTL();buildWall();buildDreams();buildNotes();buildAdm();updStats();if(!document.getElementById('sec-reasons').classList.contains('hidden'))renderReasons();}
+
+// LETTER
+function buildLetter(){
+  const c=document.getElementById('letter-body');if(!c)return;
+  c.innerHTML=D.letter.map((p,i)=>`
+    <div class="lpara" style="${i===D.letter.length-1?'border-bottom:none;margin-bottom:0;padding-bottom:0':''}">
+      <div style="position:relative">
+        ${access==='admin'?`<button class="btn-del" onclick="delLP(${i})" style="position:absolute;top:0;right:0;font-size:.7rem;padding:4px 9px">🗑️</button>`:''}
+        <p class="lopener ef" onclick="editLP(${i},'opener')">${p.opener}<span class="ei">✏️</span></p>
+        <p class="lbody ef" onclick="editLP(${i},'body')">${p.body}<span class="ei">✏️</span></p>
+      </div>
+    </div>`).join('');
+  const al=document.getElementById('adm-le');
+  if(al)al.innerHTML=D.letter.map((p,i)=>`
+    <div style="padding:1rem;background:rgba(255,255,255,0.04);border-radius:13px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.5rem">
+        <p style="color:#FF9DC8;font-style:italic;font-size:.88rem;font-weight:600">${p.opener}</p>
+        <div style="display:flex;gap:4px;flex-shrink:0">
+          <button class="btn-g" onclick="editLP(${i},'opener')" style="padding:4px 9px;font-size:.72rem">✏️ Open</button>
+          <button class="btn-g" onclick="editLP(${i},'body')" style="padding:4px 9px;font-size:.72rem">✏️ Body</button>
+          <button class="btn-del" onclick="delLP(${i})">🗑️</button>
+        </div>
+      </div>
+      <p style="color:rgba(255,255,255,0.55);font-size:.82rem;line-height:1.5">${p.body.substring(0,80)}...</p>
+    </div>`).join('');
+}
+function editLP(i,field){if(access!=='admin')return;const val=prompt(`Edit ${field}:`,D.letter[i][field]);if(val===null)return;D.letter[i][field]=val;saveFBCol('letter',D.letter);buildLetter();toast('✓ Updated!');}
+async function addLPara(){const opener=prompt('Opener:');if(!opener)return;const body=prompt('Body text:');if(!body)return;D.letter.push({opener,body});await saveFBCol('letter',D.letter);buildLetter();toast('✓ Added!');}
+async function delLP(i){if(!confirm('Delete?'))return;D.letter.splice(i,1);await saveFBCol('letter',D.letter);buildLetter();toast('✓ Deleted');}
+
+// TIMELINE
+function buildTL(){
+  const c=document.getElementById('tl-body');if(!c)return;
+  c.innerHTML=D.timeline.map((item,i)=>{const L=i%2===0;const photos=item.photos||[];return`
+    <div class="tlrow ${L?'left':'right'}">
+      <div class="tldot" style="background:${item.color};box-shadow:0 0 18px ${item.color}90"></div>
+      <div class="glass tlcard" id="tlc-${item.id}" style="border:1px solid rgba(255,255,255,0.1)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div style="font-size:1.6rem;margin-bottom:.5rem;cursor:pointer" onclick="togTL('${item.id}')">${item.emoji}</div>
+          ${access==='admin'?`<div style="display:flex;gap:4px">
+            <button class="btn-g" onclick="editTLItem(${i})" style="padding:4px 9px;font-size:.7rem">✏️</button>
+            <button class="btn-g" onclick="addTLPhoto(${i})" style="padding:4px 9px;font-size:.7rem" title="Add photo">📸</button>
+            <button class="btn-del" onclick="delTL(${i})" style="font-size:.7rem;padding:4px 9px">🗑️</button>
+          </div>`:''}
+        </div>
+        <div class="tldate" style="color:${item.color};cursor:pointer" onclick="togTL('${item.id}')">${item.date}</div>
+        <div class="tltitle" style="cursor:pointer" onclick="togTL('${item.id}')">${item.title}</div>
+        <div class="tlhint" id="tlh-${item.id}" style="cursor:pointer" onclick="togTL('${item.id}')">Tap to reveal ✨</div>
+        <div class="tldesc hidden" id="tld-${item.id}">${item.desc}
+          ${photos.length>0?`<div class="tl-photos">${photos.map((p,pi)=>`
+            <div style="position:relative;display:inline-block">
+              <img src="${p.url}" class="tl-photo" onclick="openLB('${p.url}','${p.caption||''}')" title="${p.caption||''}">
+              ${access==='admin'?`<button onclick="delTLPhoto(${i},${pi})" style="position:absolute;top:-4px;right:-4px;background:rgba(255,60,60,0.85);border:none;color:white;border-radius:50%;width:18px;height:18px;cursor:pointer;font-size:.65rem;display:flex;align-items:center;justify-content:center">✕</button>`:''}
+            </div>`).join('')}
+          </div>`:''}
+        </div>
+      </div>
+    </div>`;}).join('');
+  buildAdmTL();
+}
+function togTL(id){
+  const h=document.getElementById('tlh-'+id),d=document.getElementById('tld-'+id),c=document.getElementById('tlc-'+id);
+  const item=D.timeline.find(t=>t.id===id);
+  if(d.classList.contains('hidden')){h.classList.add('hidden');d.classList.remove('hidden');if(item)c.style.border=`1px solid ${item.color}55`;}
+  else{h.classList.remove('hidden');d.classList.add('hidden');c.style.border='1px solid rgba(255,255,255,0.1)';}
+}
+async function editTLItem(i){
+  const item=D.timeline[i];
+  const emoji=prompt('Emoji:',item.emoji);if(emoji===null)return;
+  const title=prompt('Title:',item.title);if(title===null)return;
+  const date=prompt('Date:',item.date);if(date===null)return;
+  const desc=prompt('Description:',item.desc);if(desc===null)return;
+  const color=prompt('Color (hex):',item.color)||item.color;
+  D.timeline[i]={...item,emoji,title,date,desc,color};
+  await saveFBCol('timeline',D.timeline);buildTL();toast('✓ Updated!');
+}
+async function delTL(i){if(!confirm('Delete?'))return;D.timeline.splice(i,1);await saveFBCol('timeline',D.timeline);buildTL();toast('✓ Deleted');}
+async function addTL(){
+  const emoji=prompt('Emoji:','✨');if(!emoji)return;
+  const title=prompt('Title:','New Memory');if(!title)return;
+  const date=prompt('Date:','2024');if(!date)return;
+  const desc=prompt('Description:','A beautiful moment.');if(!desc)return;
+  const color=prompt('Color (hex):','#FF5E9A')||'#FF5E9A';
+  D.timeline.push({id:'t'+Date.now(),emoji,title,date,desc,color,photos:[]});
+  await saveFBCol('timeline',D.timeline);buildTL();updStats();toast('✓ Added!');
+}
+async function addTLPhoto(idx){
+  if(!fbReady){toast('⚠️ Firebase required for photo upload');return;}
+  const input=document.createElement('input');input.type='file';input.accept='image/*';
+  input.onchange=async()=>{
+    const file=input.files[0];if(!file)return;
+    const caption=prompt('Caption for this photo (optional):')||'';
+    showProgress(0,'Uploading...');
+    const {storage,ref,uploadBytes,getDownloadURL}=window._fb;
+    const r=ref(storage,`timeline/${D.timeline[idx].id}_${Date.now()}_${file.name}`);
+    const snap=await uploadBytes(r,file);showProgress(70,'Processing...');
+    const url=await getDownloadURL(snap.ref);
+    if(!D.timeline[idx].photos)D.timeline[idx].photos=[];
+    D.timeline[idx].photos.push({url,caption});
+    showProgress(90,'Saving...');
+    await saveFBCol('timeline',D.timeline);
+    hideProgress();buildTL();updStats();toast('✓ Photo added to timeline!');
+  };
+  input.click();
+}
+async function delTLPhoto(tlIdx,pIdx){
+  if(!confirm('Delete this photo?'))return;
+  D.timeline[tlIdx].photos.splice(pIdx,1);
+  await saveFBCol('timeline',D.timeline);buildTL();toast('✓ Deleted');
+}
+function buildAdmTL(){
+  const al=document.getElementById('adm-tl');if(!al)return;
+  al.innerHTML=D.timeline.map((item,i)=>`
+    <div style="padding:1rem;background:rgba(255,255,255,0.04);border-radius:13px;margin-bottom:.7rem">
+      <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+        <span style="font-size:1.5rem">${item.emoji}</span>
+        <div style="flex:1;min-width:130px"><p style="color:white;font-size:.9rem;font-weight:700">${item.title}</p><p style="color:rgba(255,255,255,0.3);font-size:.74rem">${item.date} · ${(item.photos||[]).length} photo(s)</p></div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap">
+          <button class="btn-g" onclick="editTLItem(${i})" style="padding:7px 13px;font-size:.78rem">✏️ Edit</button>
+          <button class="btn-g" onclick="addTLPhoto(${i})" style="padding:7px 13px;font-size:.78rem">📸 Add Photo</button>
+          <button class="btn-del" onclick="delTL(${i})">🗑️</button>
+        </div>
+      </div>
+      ${(item.photos||[]).length>0?`<div class="tl-photos" style="margin-top:.75rem">${item.photos.map((p,pi)=>`
+        <div style="position:relative;display:inline-block">
+          <img src="${p.url}" style="width:55px;height:55px;object-fit:cover;border-radius:9px;border:2px solid rgba(255,94,154,0.3);cursor:pointer" onclick="openLB('${p.url}','${p.caption||''}')">
+          <button onclick="delTLPhoto(${i},${pi})" style="position:absolute;top:-4px;right:-4px;background:rgba(255,60,60,0.85);border:none;color:white;border-radius:50%;width:18px;height:18px;cursor:pointer;font-size:.65rem">✕</button>
+        </div>`).join('')}
+      </div>`:''}
+    </div>`).join('');
+}
+
+// REASONS
+function renderReasons(){
+  const list=document.getElementById('reasons-list');if(!list)return;
+  const slice=D.reasons.slice(pg*PPG,(pg+1)*PPG);
+  const c1=["#FF5E9A","#D291FF","#89CFF0","#FFD700","#FF9DC8","#B39DDB","#80DEEA","#F48FB1","#CE93D8","#80CBC4"];
+  const c2=["#D291FF","#89CFF0","#FFD700","#FF5E9A","#B39DDB","#80DEEA","#F48FB1","#CE93D8","#80CBC4","#FF9DC8"];
+  list.innerHTML=slice.map((r,i)=>`
+    <div class="glass rcard">
+      <div class="rnum" style="background:linear-gradient(135deg,${c1[i%10]},${c2[i%10]})">${pg*PPG+i+1}</div>
+      <p class="rtext">${r}</p>
+      ${access==='admin'?`<div style="flex-shrink:0;display:flex;gap:4px"><button class="btn-g" onclick="editR(${pg*PPG+i})" style="padding:5px 9px;font-size:.71rem">✏️</button><button class="btn-del" onclick="delR(${pg*PPG+i})">🗑️</button></div>`:''}
+    </div>`).join('');
+  const tot=Math.ceil(D.reasons.length/PPG);
+  document.getElementById('pbtn-prev').disabled=pg===0;
+  document.getElementById('pbtn-next').disabled=pg===tot-1;
+  document.getElementById('pinfo').textContent=`Page ${pg+1} of ${tot} · ${D.reasons.length} reasons total`;
+  document.getElementById('pdots').innerHTML=Array.from({length:tot}).map((_,i)=>`<div class="pdot${i===pg?' active':''}" style="width:${i===pg?28:8}px" onclick="goP(${i})"></div>`).join('');
+  const al=document.getElementById('adm-re');
+  if(al)al.innerHTML=D.reasons.map((r,i)=>`
+    <div style="display:flex;align-items:center;gap:.75rem;padding:.85rem;background:rgba(255,255,255,0.04);border-radius:10px">
+      <span style="color:#FF5E9A;font-weight:800;font-size:.83rem;min-width:26px">${i+1}</span>
+      <p style="color:rgba(255,255,255,0.78);font-size:.83rem;flex:1;line-height:1.5">${r}</p>
+      <div style="display:flex;gap:4px;flex-shrink:0"><button class="btn-g" onclick="editR(${i})" style="padding:4px 9px;font-size:.7rem">✏️</button><button class="btn-del" onclick="delR(${i})">🗑️</button></div>
+    </div>`).join('');
+}
+function chPage(d){const t=Math.ceil(D.reasons.length/PPG);pg=Math.max(0,Math.min(t-1,pg+d));renderReasons();window.scrollTo(0,100);}
+function goP(p){pg=p;renderReasons();}
+async function editR(i){const v=prompt('Edit reason:',D.reasons[i]);if(v===null)return;D.reasons[i]=v;await saveFBCol('reasons',D.reasons.map((t,j)=>({text:t,order:j})));renderReasons();toast('✓ Updated!');}
+async function delR(i){if(!confirm('Delete?'))return;D.reasons.splice(i,1);await saveFBCol('reasons',D.reasons.map((t,j)=>({text:t,order:j})));renderReasons();updStats();toast('✓ Deleted');}
+async function addReason(){const v=prompt('New reason:');if(!v)return;D.reasons.push(v);await saveFBCol('reasons',D.reasons.map((t,j)=>({text:t,order:j})));renderReasons();updStats();toast('✓ Added!');}
+
+// WALL
+function buildWall(){
+  const c=document.getElementById('wall-body');if(!c)return;
+  c.innerHTML=D.wall.map((msg,i)=>`
+    <div class="glass wcard">
+      <div class="wqm">❝</div>
+      <p class="wtext">${typeof msg==='string'?msg:msg.text}</p>
+      <div class="wqm">❞</div>
+      ${access==='admin'?`<div style="display:flex;gap:5px;justify-content:center;margin-top:.75rem"><button class="btn-g" onclick="editW(${i})" style="padding:5px 11px;font-size:.72rem">✏️</button><button class="btn-del" onclick="delW(${i})">🗑️</button></div>`:''}
+    </div>`).join('');
+  const al=document.getElementById('adm-wa');
+  if(al)al.innerHTML=D.wall.map((msg,i)=>`
+    <div style="display:flex;align-items:center;gap:.75rem;padding:.85rem;background:rgba(255,255,255,0.04);border-radius:10px">
+      <p style="color:rgba(255,255,255,0.78);font-size:.85rem;flex:1;font-style:italic">"${typeof msg==='string'?msg:msg.text}"</p>
+      <div style="display:flex;gap:4px;flex-shrink:0"><button class="btn-g" onclick="editW(${i})" style="padding:4px 9px;font-size:.7rem">✏️</button><button class="btn-del" onclick="delW(${i})">🗑️</button></div>
+    </div>`).join('');
+}
+async function addWall(){const v=prompt('New message:');if(!v)return;D.wall.push(v);await saveFBCol('wall',D.wall.map((t,i)=>({text:typeof t==='string'?t:t.text,order:i})));buildWall();updStats();toast('✓ Added!');}
+async function editW(i){const cur=typeof D.wall[i]==='string'?D.wall[i]:D.wall[i].text;const v=prompt('Edit:',cur);if(v===null)return;D.wall[i]=v;await saveFBCol('wall',D.wall.map((t,j)=>({text:typeof t==='string'?t:t.text,order:j})));buildWall();toast('✓ Updated!');}
+async function delW(i){if(!confirm('Delete?'))return;D.wall.splice(i,1);await saveFBCol('wall',D.wall.map((t,j)=>({text:typeof t==='string'?t:t.text,order:j})));buildWall();updStats();toast('✓ Deleted');}
+
+// DREAMS
+function buildDreams(){
+  const c=document.getElementById('dreams-body');if(!c)return;
+  c.innerHTML=D.dreams.map((d,i)=>`
+    <div class="glass dcard">
+      <div class="dicon">${d.icon}</div>
+      <h3 class="dtitle">${d.title}</h3>
+      <p class="ddesc">${d.desc}</p>
+      ${access==='admin'?`<div style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem"><button class="btn-g" onclick="editDr(${i})" style="padding:6px 13px;font-size:.78rem">✏️</button><button class="btn-del" onclick="delDr(${i})">🗑️</button></div>`:''}
+    </div>`).join('');
+  const al=document.getElementById('adm-dr');
+  if(al)al.innerHTML=D.dreams.map((d,i)=>`
+    <div style="display:flex;align-items:center;gap:1rem;padding:1rem;background:rgba(255,255,255,0.04);border-radius:13px">
+      <span style="font-size:1.8rem">${d.icon}</span>
+      <div style="flex:1"><p style="color:white;font-size:.9rem;font-weight:700">${d.title}</p><p style="color:rgba(255,255,255,0.32);font-size:.76rem;margin-top:2px">${d.desc.substring(0,60)}...</p></div>
+      <div style="display:flex;gap:5px"><button class="btn-g" onclick="editDr(${i})" style="padding:6px 13px;font-size:.78rem">✏️</button><button class="btn-del" onclick="delDr(${i})">🗑️</button></div>
+    </div>`).join('');
+}
+async function addDream(){const icon=prompt('Emoji:','✨');if(!icon)return;const title=prompt('Title:');if(!title)return;const desc=prompt('Description:');if(!desc)return;D.dreams.push({icon,title,desc});await saveFBCol('dreams',D.dreams);buildDreams();toast('✓ Added!');}
+async function editDr(i){const d=D.dreams[i];const icon=prompt('Emoji:',d.icon);if(!icon)return;const title=prompt('Title:',d.title);if(!title)return;const desc=prompt('Description:',d.desc);if(!desc)return;D.dreams[i]={icon,title,desc};await saveFBCol('dreams',D.dreams);buildDreams();toast('✓ Updated!');}
+async function delDr(i){if(!confirm('Delete?'))return;D.dreams.splice(i,1);await saveFBCol('dreams',D.dreams);buildDreams();toast('✓ Deleted');}
+
+// VAULT PHOTOS
+function toggleVH(){document.getElementById('vhint').classList.toggle('hidden');}
+document.getElementById('vpw').addEventListener('keydown',e=>{if(e.key==='Enter')tryVault();});
+function tryVault(){
+  const v=document.getElementById('vpw').value.trim();
+  if(v===PW.vt){
+    document.getElementById('vault-locked').style.display='none';
+    const op=document.getElementById('vault-open');
+    op.classList.remove('hidden');
+    renderVault(op);
+  }else{
+    document.getElementById('vcard').style.animation='shake .5s ease';
+    document.getElementById('vpw').value='';
+    setTimeout(()=>document.getElementById('vcard').style.animation='',600);
+  }
+}
+function renderVault(container){
+  const photos=D.vaultPhotos||[];
+  container.innerHTML=`
+    <div class="glass-gold" style="padding:2.75rem;border:1px solid rgba(255,215,0,0.24);border-radius:22px;animation:vaultOpen .6s ease">
+      <div style="text-align:center;margin-bottom:2rem">
+        <div style="font-size:4rem;margin-bottom:1rem;display:inline-block;animation:heartbeat 2s infinite;filter:drop-shadow(0 0 22px rgba(255,215,0,0.65))">💍</div>
+        <h2 style="font-size:2rem;color:#FFD700;font-family:Georgia,serif;margin-bottom:.5rem">Secret Memory Vault</h2>
+        <p style="color:rgba(255,255,255,0.35);font-size:.85rem">Our most precious, private memories 📸</p>
+        <div style="width:50px;height:3px;background:linear-gradient(90deg,#FFD700,#FF5E9A);margin:1rem auto;border-radius:2px"></div>
+      </div>
+      ${photos.length===0?`<div style="text-align:center;padding:3rem;color:rgba(255,255,255,0.3)"><div style="font-size:4rem;margin-bottom:1rem">📷</div><p>${access==='admin'?'Upload secret photos in Admin Panel → Vault Photos':'No secret photos yet 💕'}</p></div>`:''}
+      <div class="vgrid" id="vault-photo-grid">
+        ${photos.map((p,i)=>`
+          <div class="vphoto-card">
+            <img src="${p.url}" onclick="openLB('${p.url}','${(p.caption||'').replace(/'/g,"\\'")}')">
+            <div class="vphoto-caption">${p.caption||''}</div>
+            ${access==='admin'?`<div style="padding:.5rem;text-align:center"><button class="btn-del" onclick="delVaultPhoto(${i})" style="font-size:.73rem">🗑️ Delete</button></div>`:''}
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+async function uploadVaultPhotos(input){
+  if(!fbReady){toast('⚠️ Firebase not connected');return;}
+  const {storage,ref,uploadBytes,getDownloadURL}=window._fb;
+  const files=[...input.files];
+  for(let fi=0;fi<files.length;fi++){
+    const file=files[fi];
+    showProgress(Math.round(fi/files.length*30),'Preparing...');
+    const caption=prompt(`Caption for photo ${fi+1} of ${files.length} (optional):`)||'';
+    showProgress(Math.round(fi/files.length*50+30),'Uploading...');
+    try{
+      const storageRef=ref(storage,`vault/${Date.now()}_${file.name}`);
+      const snap=await uploadBytes(storageRef,file);
+      showProgress(80,'Getting URL...');
+      const url=await getDownloadURL(snap.ref);
+      const item={url,caption,order:D.vaultPhotos.length};
+      D.vaultPhotos.push(item);
+    }catch(e){console.error('Upload error:',e);toast('❌ Upload failed — check Firebase Storage Rules!');}
+  }
+  showProgress(90,'Saving to Firestore...');
+  await saveFBCol('vaultPhotos',D.vaultPhotos);
+  hideProgress();
+  // Refresh vault display if open
+  const op=document.getElementById('vault-open');
+  if(!op.classList.contains('hidden'))renderVault(op);
+  buildAdmVault();updStats();
+  toast(`✓ ${files.length} photo(s) uploaded to vault!`);
+}
+function handleVDrop(e){e.preventDefault();const dt={files:e.dataTransfer.files};uploadVaultPhotos(dt);}
+async function delVaultPhoto(i){
+  if(!confirm('Delete this secret photo?'))return;
+  D.vaultPhotos.splice(i,1);
+  await saveFBCol('vaultPhotos',D.vaultPhotos);
+  const op=document.getElementById('vault-open');
+  if(!op.classList.contains('hidden'))renderVault(op);
+  buildAdmVault();updStats();toast('✓ Deleted');
+}
+function buildAdmVault(){
+  const al=document.getElementById('adm-va');if(!al)return;
+  const photos=D.vaultPhotos||[];
+  al.innerHTML=photos.length===0?'<p style="color:rgba(255,255,255,0.3);padding:1rem;text-align:center">No vault photos uploaded yet</p>':
+    photos.map((p,i)=>`
+      <div style="display:flex;align-items:center;gap:1rem;padding:.85rem;background:rgba(255,215,0,0.05);border-radius:12px;border:1px solid rgba(255,215,0,0.1);margin-bottom:.5rem">
+        <img src="${p.url}" style="width:55px;height:55px;object-fit:cover;border-radius:10px;cursor:pointer" onclick="openLB('${p.url}','${(p.caption||'').replace(/'/g,"\\'")}')">
+        <div style="flex:1"><p style="color:white;font-size:.87rem">${p.caption||'No caption'}</p><p style="color:rgba(255,255,255,0.3);font-size:.72rem">Photo ${i+1}</p></div>
+        <button class="btn-del" onclick="delVaultPhoto(${i})">🗑️</button>
+      </div>`).join('');
+}
+
+// GUESTBOOK
+function buildNotes(){
+  const c=document.getElementById('notes-body');if(!c)return;
+  c.innerHTML=D.notes.map(n=>`
+    <div class="glass ncard">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.55rem;flex-wrap:wrap;gap:6px">
+        <span class="nauthor">${n.name}</span><span class="ndate">${n.date}</span>
+      </div>
+      <p class="ntext">"${n.text}"</p>
+    </div>`).join('');
+  const al=document.getElementById('adm-gb');
+  if(al)al.innerHTML=D.notes.length===0?'<p style="color:rgba(255,255,255,0.3);padding:1rem">No messages yet</p>':
+    D.notes.map(n=>`
+      <div style="padding:1rem;background:rgba(255,94,154,0.06);border-radius:13px;border:1px solid rgba(255,94,154,0.12);margin-bottom:.5rem">
+        <div style="display:flex;justify-content:space-between;margin-bottom:.4rem"><span style="color:#FF9DC8;font-weight:700;font-size:.88rem">${n.name}</span><span style="color:rgba(255,255,255,0.25);font-size:.73rem">${n.date}</span></div>
+        <p style="color:rgba(255,255,255,0.75);font-size:.88rem;font-style:italic;line-height:1.6">"${n.text}"</p>
+      </div>`).join('');
+}
+async function submitNote(){
+  const text=document.getElementById('note-in').value.trim();if(!text)return;
+  const date=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  const note={name:'Ghazala 💕',text,date,order:D.notes.length};
+  D.notes.push(note);
+  if(fbReady){const {db,collection,addDoc}=window._fb;try{await addDoc(collection(db,'notes'),note);}catch(e){}}
+  document.getElementById('note-in').value='';buildNotes();updStats();
+  const s=document.getElementById('note-sent');s.style.display='block';setTimeout(()=>s.style.display='none',3500);
+}
+
+// LIGHTBOX
+function openLB(url,cap=''){document.getElementById('lbimg').src=url;document.getElementById('lb-cap').textContent=cap;document.getElementById('lb').classList.remove('hidden');}
+function closeLB(){document.getElementById('lb').classList.add('hidden');document.getElementById('lbimg').src='';}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target===this||e.target===document.getElementById('lb-cap'))closeLB();});
+
+// UPLOAD PROGRESS
+function showProgress(pct,msg){
+  const el=document.getElementById('upload-progress');el.classList.remove('hidden');
+  document.getElementById('prog-fill').style.width=pct+'%';
+  document.getElementById('prog-text').textContent=msg;
+}
+function hideProgress(){document.getElementById('upload-progress').classList.add('hidden');}
+
+// ADMIN
+function openAdmin(){document.getElementById('ms').classList.add('hidden');document.getElementById('as').classList.remove('hidden');buildAdm();}
+function exitAdmin(){document.getElementById('as').classList.add('hidden');document.getElementById('ms').classList.remove('hidden');rebuildAll();}
+function aTab(tab,btn){
+  ['overview','alltext','tl','re','wa','va','dr','le','gb'].forEach(t=>{const el=document.getElementById('at-'+t);if(el)el.classList.toggle('hidden',t!==tab);});
+  document.querySelectorAll('.atab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  if(tab==='re')renderReasons();
+  if(tab==='va')buildAdmVault();
+  if(tab==='tl')buildAdmTL();
+}
+function buildAdm(){buildLetter();buildTL();buildWall();buildDreams();buildNotes();buildAdmVault();buildAllFields();}
+function buildAllFields(){
+  const el=document.getElementById('allfields');if(!el)return;
+  const fields=[
+    {id:'h-tag',label:'Hero Tagline'},{id:'h-l1',label:'Hero Line 1'},{id:'h-l2',label:'Hero Line 2'},{id:'h-l3',label:'Hero Line 3'},
+    {id:'h-sub',label:'Hero Subtitle'},{id:'h-n1',label:'Name 1'},{id:'h-n2',label:'Name 2'},{id:'h-elabel',label:'Engagement Label'},
+    {id:'h-b1',label:'Date Badge 1'},{id:'h-b2',label:'Date Badge 2'},{id:'t-letter',label:'Letter Title'},
+    {id:'t-timeline',label:'Timeline Title'},{id:'s-timeline',label:'Timeline Subtitle'},{id:'t-reasons',label:'Reasons Title'},
+    {id:'s-reasons',label:'Reasons Subtitle'},{id:'t-wall',label:'Wall Title'},{id:'s-wall',label:'Wall Subtitle'},
+    {id:'t-dreams',label:'Dreams Title'},{id:'s-dreams',label:'Dreams Subtitle'},{id:'t-guest',label:'Guestbook Title'},
+    {id:'s-guest',label:'Guestbook Subtitle'},{id:'h-ft',label:'Footer Quote'},{id:'h-fs',label:'Footer Subtitle'},
+    {id:'s-l1',label:'Stat 1 Label'},{id:'s-l2',label:'Stat 2 Label'},{id:'s-l3',label:'Stat 3 Label'},{id:'s-l4',label:'Stat 4 Label'},
+  ];
+  el.innerHTML=fields.map(f=>{
+    const e2=document.getElementById(f.id);let txt='';
+    if(e2){e2.childNodes.forEach(n=>{if(n.nodeType===3)txt+=n.textContent;});txt=txt.trim();}
+    return `<div style="display:flex;align-items:center;gap:1rem;padding:.9rem;background:rgba(255,255,255,0.04);border-radius:11px;margin-bottom:.5rem">
+      <div style="flex:1;min-width:0"><p style="color:rgba(255,255,255,0.4);font-size:.71rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">${f.label}</p>
+      <p style="color:white;font-size:.87rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${txt||'(empty)'}</p></div>
+      <button class="btn-g" onclick="ae('${f.id}','${f.label}')" style="padding:7px 15px;font-size:.8rem;flex-shrink:0">✏️ Edit</button>
+    </div>`;
+  }).join('');
+}
+function updStats(){
+  const tlPhotos=D.timeline.reduce((acc,t)=>acc+(t.photos||[]).length,0);
+  const m={re:D.reasons.length,tl:D.timeline.length,wa:D.wall.length,vp:(D.vaultPhotos||[]).length,no:D.notes.filter(n=>n.name!=='A note from Abdullah').length,tlp:tlPhotos};
+  Object.keys(m).forEach(k=>{const el=document.getElementById('as-'+k);if(el)el.textContent=m[k];});
+}
+
+// TOAST
+function toast(msg,ms=2600){const t=document.getElementById('toast');t.textContent=msg;t.classList.remove('hidden');setTimeout(()=>t.classList.add('hidden'),ms);}
+
+// INIT
+buildBG();
+window.addEventListener('fb-ready',()=>{loadFB();});
+</script>
+</body></html>
